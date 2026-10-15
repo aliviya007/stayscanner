@@ -4,6 +4,14 @@ StayScanner is a portfolio project that combines hotel data cleaning, price and 
 
 The goal is to demonstrate how raw accommodation data can be transformed into a structured dataset and a useful comparison experience.
 
+## Live Demo
+
+[**Explore the StayScanner Dashboard**](https://stayscanner-a7ntaxwf95eecrbl5yfmms.streamlit.app/)
+
+## Dashboard Preview
+
+![StayScanner dashboard preview](screenshots/dashboard.png)
+
 ## Features
 
 - **Data cleaning:** Standardizes hotel information and prepares price, rating, and review-count fields.
@@ -26,6 +34,8 @@ stayscanner/
 ├── data/
 │   ├── raw/
 │   └── processed/
+├── screenshots/
+│   └── dashboard.png
 ├── src/
 │   ├── clean_data.py
 │   ├── scraper.py
@@ -37,27 +47,27 @@ stayscanner/
 
 ## Run Locally
 
-1. Clone the repository:
+1. **Clone the repository:**
 
    ```bash
    git clone https://github.com/aliviya007/stayscanner.git
    cd stayscanner
    ```
 
-2. Create and activate a virtual environment:
+2. **Create and activate a virtual environment:**
 
    ```bash
    python3 -m venv .venv
    source .venv/bin/activate
    ```
 
-3. Install dependencies:
+3. **Install dependencies:**
 
    ```bash
    pip install -r requirements.txt
    ```
 
-4. Launch the dashboard:
+4. **Launch the dashboard:**
 
    ```bash
    streamlit run dashboard/app.py
@@ -79,7 +89,7 @@ The scraper targets a demonstration hotel website. Its output is intended for pr
 
 ## Future Improvements
 
-- Deploy the dashboard publicly.
+- Improve the dashboard's usability and visual design.
 - Improve hotel matching and data validation.
 - Add more robust review-topic classification.
 - Extend the comparison experience with additional accommodation sources.
